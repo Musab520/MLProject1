@@ -50,7 +50,7 @@ charge=df[["Charge Amount"]]
 (charge.describe())
 
 ## SHOW CORRELATION
-dfScaledCats.corr().style.background_gradient(cmap='coolwarm').set_precision(2)
+dfScaledCats.corr()
 
 ## NORMALIZATION AND SPLITTING THE DATA
 df_norm= MinMaxScaler().fit(df_final)
